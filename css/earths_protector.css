@@ -1,1 +1,113 @@
 @charset "utf-8";
+.protector_subs {
+  background-color: var(--text--footer--regular);
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+.protector_subs_left {
+  color: #fff;
+}
+.protector_subs_left ul {
+  display: flex;
+}
+
+.prices {
+  display: flex;
+}
+.goods_btn {
+  gap: 40px;
+  margin-bottom: 45px;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.email h1 {
+  color: #fff;
+  font-size: 24px;
+}
+.guideTxt {
+  font-size: 16px;
+  color: #fff;
+}
+.protector_subs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.protector_subs > h1:first-child {
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  font-size: var(--text--heading--h1);
+  font-family: "Paperozi";
+  font-weight: 600;
+  padding-bottom: 80px;
+}
+.weareTxt {
+  color: #fff;
+  margin-bottom: 60px;
+}
+.email_input {
+  padding: 18px 0;
+  font-size: 20px;
+  width: 511px;
+}
+.subscription {
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 18px 0;
+  font-size: 20px;
+  width: 511px;
+  background-color: #f1cb00;
+}
+.weareTxt p {
+  color: #fff;
+  font-size: var(--text--heading--h1);
+  font-family: "Pretendard";
+  font-weight: 700;
+}
+.protector_subs_right {
+  width: 50%;
+}
+.protector_subs_right img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.footer_top ul {
+  display: flex;
+  gap: 15px;
+}
+.footer_top ul li {
+  font-size: var(--text--footer--regular);
+}
+.footer_bottom {
+  display: flex;
+}
+
+.korea_Head_Office {
+  padding: 33px 0 33px;
+}
+.korea_Head_Office > p {
+  font-size: 15px;
+}
+.lastTxt {
+  padding-top: 33px;
+}
+.lastTxt > span {
+  text-decoration: underline;
+}
+.goods_btn.active {
+  background-color: var(--color--sub);
+  color: #fff;
+}
