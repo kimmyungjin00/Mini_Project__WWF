@@ -40,6 +40,14 @@
     />
     <meta property="og:image" content="우리가 정하는 썸네일" />
     <meta property="og:url" content="우리링크" />
+    <!-- 폰트 어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -52,16 +60,16 @@
       <!-- 지구수비대 -->
       <!-- 지구소식함 -->
       <section class="earths_news">
+        <h1>지구소식함</h1>
         <div class="earths_news_inner inner">
-          <h1>지구소식함</h1>
           <!-- 소식 -->
           <div class="news">
             <h2>소식</h2>
             <ul class="news_contents">
               <!-- 언론보도 -->
-              <li>
+              <li class="active">
                 <a href="#">언론보도</a>
-                <div class="media_news">
+                <div class="news_desc">
                   <ul>
                     <li>
                       <a href="#">
@@ -114,7 +122,7 @@
               <!-- 소식 -->
               <li>
                 <a href="#">소식</a>
-                <div class="new_news">
+                <div class="news_desc">
                   <ul>
                     <li>
                       <a href="#">
@@ -164,7 +172,7 @@
               <!-- 판다뉴스 -->
               <li>
                 <a href="#">판다뉴스</a>
-                <div class="panda_news">
+                <div class="news_desc">
                   <ul>
                     <li>
                       <a href="#">
@@ -202,13 +210,13 @@
                 </div>
               </li>
             </ul>
-            <p>View More +</p>
+            <a href="#">View More +</a>
           </div>
           <!-- 서명하기 -->
           <div class="sign">
             <div class="sign_top">
               <h2>서명하기</h2>
-              <p>서명 현황보기 +</p>
+              <a href="#">서명 현황보기 +</a>
             </div>
             <div class="sign_desc">
               <p>플라스틱 오염을 끝내는 국제 협약을 위해 서명해주세요!</p>
