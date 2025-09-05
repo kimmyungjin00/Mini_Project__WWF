@@ -96,6 +96,11 @@
 
 .testBG {
   background-color: #000000;
-  height: 8000px;
+  height: 1080px;
+  width: 100%;
+}
+.testBG2 {
+  background-color: #fff;
+  height: 1080px;
   width: 100%;
 }
