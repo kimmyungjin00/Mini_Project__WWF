@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
     });
     const layers = [
       { layer: "1", yPercent: 70 },
-      { layer: "2", yPercent: -60 },
+      { layer: "2", yPercent: -80 },
     ];
     layers.forEach((layerObj, idx) => {
       tl.to(
@@ -36,6 +36,7 @@ window.addEventListener("load", () => {
   });
   gsap.ticker.lagSmoothing(0);
 
+  // 헤더메뉴 스크롤했을때 나오게하기
   const header = document.querySelector(".header");
   const changePoint = 3240;
 
