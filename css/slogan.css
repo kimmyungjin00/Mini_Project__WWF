@@ -1,4 +1,9 @@
 @charset "utf-8";
+.slogan {
+  background: url("../image/slogan_bee.gif") no-repeat center / auto,
+  url("../image/slogan_penguin1.gif") no-repeat right top / auto;
+  background-size: 1000px, 650px
+}
 .slogan_wrap {
   padding: var(--spacing--large) 0;
   width: 100%;
