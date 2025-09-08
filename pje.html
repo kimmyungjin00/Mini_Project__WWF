@@ -6,11 +6,19 @@
     <title>세계자연기금 홈페이지, WWF Korea</title>
     <!-- jQuery -->
     <script src="js/jquery-1.12.3.js"></script>
-    <script src="js/jquery.js"></script>
+    <script src="js/pjeQ.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+
     <!-- js -->
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/pje.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- 파비콘 -->
     <link
       rel="icon"
@@ -40,16 +48,15 @@
     />
     <meta property="og:image" content="우리가 정하는 썸네일" />
     <meta property="og:url" content="우리링크" />
-    <!-- 폰트 어썸 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
+    <!-- fixed 버튼 -->
+    <div class="fixed_btn">
+      <a href="#"
+        ><img src="image/donate_button.png" alt="후원하기" class="donate_btn"
+      /></a>
+      <img src="image/goTop_button.png" alt="위로가기" class="go_top_btn" />
+    </div>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 헤더 -->
@@ -222,39 +229,74 @@
               <p>플라스틱 오염을 끝내는 국제 협약을 위해 서명해주세요!</p>
             </div>
             <!-- 서명 스와이퍼 -->
-            <ul class="swiper sign_swiper">
-              <li class="swiper-slide">
-                <p>김**</p>
-                <p>자연보호에 동참합니다</p>
-              </li>
-              <li class="swiper-slide">
-                <p>박**</p>
-                <p>자연보호에 동참합니다</p>
-              </li>
-              <li class="swiper-slide">
-                <p>이**</p>
-                <p>자연보호에 동참합니다</p>
-              </li>
-              <li class="swiper-slide">
-                <p>최**</p>
-                <p>자연보호에 동참합니다</p>
-              </li>
-              <li class="swiper-slide">
-                <p>유**</p>
-                <p>자연보호에 동참합니다</p>
-              </li>
-              <li class="swiper-slide">
-                <p>김**</p>
-                <p>자연보호에 동참합니다</p>
-              </li>
-            </ul>
+            <div class="swiper sign_swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <p>김**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-05</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>박**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-05</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>이**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-07</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>최**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-07</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>유**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-07</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>김**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-07</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>진**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-10</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>손**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-10</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>채**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-10</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>한**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-13</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>유**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-13</p>
+                </li>
+                <li class="swiper-slide">
+                  <p>임**</p>
+                  <p>자연보호에 동참합니다.</p>
+                  <p>2025-09-13</p>
+                </li>
+              </ul>
+            </div>
+
             <div class="sign_input">
-              <input
-                type="text"
-                placeholder="자연보호 서명에 동참하기"
-                id="protect_sign"
-              />
-              <label for="protect_sign">서명하기</label>
+              <input type="text" placeholder="자연보호 서명에 동참하기" />
+              <button>서명하기</button>
             </div>
           </div>
         </div>
