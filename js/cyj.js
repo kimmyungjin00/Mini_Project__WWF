@@ -1,5 +1,3 @@
-// ------- Osmo [https://osmo.supply/] ------- //
-
 window.addEventListener("load", () => {
   // Register GSAP Plugins
   gsap.registerPlugin(ScrollTrigger);
