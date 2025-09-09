@@ -1,32 +1,5 @@
 @charset "utf-8";
 
-.fixed_btn {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-}
-.donate_btn {
-  width: 80px;
-  /* margin-bottom: 20px; */
-}
-.go_top_btn {
-  width: 60px;
-  cursor: pointer;
-}
-
-.fixed_btn.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 .earths_news {
   position: relative;
   /* padding: 100px 0; */
@@ -79,7 +52,7 @@
 .news_contents > li {
   position: relative;
 }
-.news_contents > li > a {
+.news_contents > li > p {
   display: block;
   width: 110px;
   line-height: 45px;
@@ -90,20 +63,21 @@
   font-weight: 400;
   color: var(--color--font--sub);
   /* background-color: aliceblue; */
+  cursor: pointer;
 }
-.news_contents > li.active > a {
+.news_contents > li.active > p {
   background-color: var(--color--main);
   color: #fff;
 }
-.news_contents > li:first-child > a {
+.news_contents > li:first-child > p {
   position: absolute;
   left: 0;
 }
-.news_contents > li:nth-child(2) > a {
+.news_contents > li:nth-child(2) > p {
   position: absolute;
   left: 115px;
 }
-.news_contents > li:nth-child(3) > a {
+.news_contents > li:nth-child(3) > p {
   position: absolute;
   left: 230px;
 }
