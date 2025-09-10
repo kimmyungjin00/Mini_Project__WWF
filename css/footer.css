@@ -1,1 +1,80 @@
 @charset "utf-8";
+.footer {
+  position: relative;
+}
+.footer ul {
+  display: flex;
+  gap: 10px;
+  font-size: var(--text--body--small);
+  padding-bottom: 25px;
+  padding-top: 55px;
+}
+.footer_inner hr {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.footer_bottom {
+  display: flex;
+  gap: 50px;
+}
+.footer_bottom_left {
+  padding-top: 33px;
+}
+.footer_bottom_left img {
+  width: 100%;
+}
+.footer_bottom_right {
+  padding-top: 33px;
+  padding-bottom: 217px;
+  font-size: var(--text--footer--small);
+}
+.korea_Head_Office1 {
+  padding-bottom: 33px;
+  font-size: var(--text--footer--regular);
+}
+.korea_Head_Office2 {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+/* font-size: var(--text--footer--small); */
+.korea_Head_Office2 .p {
+  gap: 5px;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.lastTxt {
+  padding-bottom: 217px;
+  /* font-size: var(--text--footer--small); */
+}
+@media (max-width: 768px) {
+  .footer_inner {
+    width: 100% !important;
+    padding: 0 15px;
+  }
+  .footer_bottom_right {
+    width: 100%;
+  }
+  .footer_bottom_left {
+    width: 107px;
+  }
+}
+@media (max-width: 390px) {
+  .footer_inner {
+    width: 100% !important;
+    padding: 0 15px;
+  }
+  .footer_bottom {
+    gap: 50px;
+  }
+  .footer_bottom_right {
+    gap: 0px;
+    width: 100%;
+  }
+  .footer_bottom_left {
+    width: 90px;
+  }
+}
