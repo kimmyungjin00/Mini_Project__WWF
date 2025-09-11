@@ -46,6 +46,7 @@
   height: 61px;
   font-size: 26px;
   border-radius: 5px;
+  font-family: "Paperozi";
 }
 .pro_subs_btn {
   gap: 30px;
@@ -110,10 +111,7 @@
     margin: auto !important;
     width: 90%;
   }
-
 }
-
-
 
 @media (max-width: 390px) {
   .protector_subs_inner {
@@ -130,5 +128,4 @@
     margin: auto !important;
     width: 90%;
   }
-
 }
