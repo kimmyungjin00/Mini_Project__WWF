@@ -70,6 +70,9 @@
   --spacing--medium: 60px;
   --spacing--small: 25px;
 }
+body {
+  cursor: url(/image/cursor.png) , auto;
+}
 ul,
 li {
   list-style: none;
