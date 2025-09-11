@@ -91,6 +91,9 @@ a {
   border-radius: 2px;
   background-color: #fff;
 }
+.hamburger.scroll > span {
+  background-color: var(--color--font--black);
+}
 
 /* 모바일메뉴 */
 .moblie_menu {

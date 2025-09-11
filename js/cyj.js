@@ -36,13 +36,17 @@ window.addEventListener("load", () => {
 
   // 헤더메뉴 스크롤했을때 나오게하기
   const header = document.querySelector(".header");
-  const changePoint = (document.querySelector("#slogan").offsetTop - 50);
+  const hamburger = document.querySelector(".hamburger");
+  const changePoint = document.querySelector("#slogan");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= changePoint) {
+    const sectionTop = changePoint.offsetTop - 50;
+    if (window.scrollY >= sectionTop) {
       header.classList.add("scroll");
+      hamburger.classList.add("scroll");
     } else {
       header.classList.remove("scroll");
+      hamburger.classList.remove("scroll");
     }
   });
 
@@ -65,7 +69,6 @@ window.addEventListener("load", () => {
   });
 
   // 햄버거 클릭했을 때 모바일 메뉴 보이기
-  const hamburger = document.querySelector(".hamburger");
   const moblieMenu = document.querySelector(".moblie_menu");
   const moClose = document.querySelector(".mo_close");
   hamburger.addEventListener("click", function () {
