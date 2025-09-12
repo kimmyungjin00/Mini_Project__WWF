@@ -28,5 +28,25 @@ window.addEventListener("load", function () {
       delay: 2500,
       disableOnInteraction: false,
     },
+
+    // 반응형 설정
+    breakpoints: {
+      1920:{
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      390: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
+  });
+  const link = this.document.querySelector(".event_link");
+  link.addEventListener("click", () => {
+    this.window.location.href = "event.html";
   });
 });

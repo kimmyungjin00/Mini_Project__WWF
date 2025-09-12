@@ -1,9 +1,10 @@
 @charset "utf-8";
 .protector_subs {
   background-color: var(--color--neutral);
+  scroll-margin-top: 100px;
 }
 .pro_subs_h1 {
-  padding-top: 131px;
+  padding-top: 100px;
   padding-bottom: 88px;
   margin: auto 0;
   text-align: center;
@@ -52,20 +53,19 @@
   gap: 30px;
   display: flex;
 }
-.subscribe {
-  background-color: var(--color--sub);
-  width: 100%;
-  padding: 18px 0;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: var(--text--body--regular);
-  font-weight: bold;
-}
-
 .pro_subs_email {
   display: flex;
   gap: 25px;
   flex-direction: column;
+}
+.subscribe {
+  background-color: var(--color--sub);
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--text--body--regular);
+  font-weight: bold;
 }
 .pro_subs_email p {
   font-size: var(--text--body--regular);
@@ -74,8 +74,8 @@
 }
 .email {
   font-size: 20px;
-  width: 100%;
-  padding: 20px 15px;
+  width: calc(100% - 15px);
+  padding: 20px 0 20px 15px;
   border-radius: 5px;
   border: none;
 }
@@ -83,7 +83,7 @@
   display: flex;
   gap: 5px;
   flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 .pro_subs_txt p {
   color: #ebebeb;

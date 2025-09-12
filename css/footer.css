@@ -26,7 +26,6 @@
 }
 .footer_bottom_right {
   padding-top: 33px;
-  padding-bottom: 217px;
   font-size: var(--text--footer--small);
 }
 .korea_Head_Office1 {
@@ -46,10 +45,6 @@
   padding-bottom: 30px;
 }
 
-.lastTxt {
-  padding-bottom: 217px;
-  /* font-size: var(--text--footer--small); */
-}
 @media (max-width: 768px) {
   .footer_inner {
     width: 100% !important;
