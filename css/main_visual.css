@@ -1,7 +1,7 @@
 @charset "utf-8";
 .main_visual {
-  width: 100vw;
-  height: clamp(300px , 55vw , 1080px);
+  width: 100%;
+  height: clamp(300px, 55vw, 1080px);
   overflow: hidden;
 }
 .main_visual > video {

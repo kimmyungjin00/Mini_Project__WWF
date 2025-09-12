@@ -11,8 +11,6 @@
 }
 .footer_inner hr {
   position: absolute;
-  left: 0;
-  width: 100%;
 }
 .footer_bottom {
   display: flex;
