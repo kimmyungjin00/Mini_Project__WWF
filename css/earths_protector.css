@@ -74,12 +74,12 @@
 
 /* 반응형 */
 @media (max-width: 1280px) {
-  .inner {
+  .earths_protector_inner {
     width: 1200px !important;
   }
 }
 @media (max-width: 768px) {
-  .inner {
+  .earths_protector_inner {
     width: 680px !important;
   }
   .earths_protector_swiper .swiper-slide > p {
@@ -89,7 +89,7 @@
   }
 }
 @media (max-width: 390px) {
-  .inner {
+  .earths_protector_inner {
     width: 350px !important;
   }
   .earths_protector_swiper .swiper-slide > p {
