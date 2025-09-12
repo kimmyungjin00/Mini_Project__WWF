@@ -11,8 +11,9 @@
 }
 .footer_inner hr {
   position: absolute;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 99%;
 }
 .footer_bottom {
   display: flex;

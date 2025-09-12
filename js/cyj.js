@@ -27,13 +27,16 @@ window.addEventListener("load", () => {
     });
   });
   /* Lenis */
-  const lenis = new Lenis();
-  lenis.on("scroll", ScrollTrigger.update);
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-  });
-  gsap.ticker.lagSmoothing(0);
+  gsap.registerPlugin(ScrollTrigger);
 
+  ScrollTrigger.scrollerProxy(document.body, {
+    scrollTop(value) {
+      return arguments.length ? lenis.scrollTo(value) : lenis.scroll.instance.scroll;
+    },
+    getBoundingClientRect() {
+      return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+    },
+  });
   // 헤더메뉴 스크롤했을때 나오게하기
   const header = document.querySelector(".header");
   const hamburger = document.querySelector(".hamburger");
