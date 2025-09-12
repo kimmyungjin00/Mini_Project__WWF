@@ -8,7 +8,7 @@
   padding-bottom: 88px;
   text-align: center;
   font-family: "Paperozi";
-  font-weight: bold;
+  font-weight: 600;
   font-size: var(--text--heading--h1);
   color: #ebebeb;
 }
@@ -37,7 +37,7 @@
 
 .pro_subs_title p {
   font-family: "Pretendard";
-  font-weight: bold;
+  font-weight: 500;
   font-size: var(--text--heading--h1);
   color: #ebebeb;
 }

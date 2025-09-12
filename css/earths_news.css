@@ -21,7 +21,7 @@
 .earths_news_inner {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .earths_news h2 {
@@ -53,7 +53,7 @@
 .news_contents {
   width: 70%;
   max-width: 730px;
-  /* min-width: 360px; */
+  /* min-width: 250px; */
   /* margin: 100px auto; */
   /* background-color: aquamarine; */
 }
@@ -153,7 +153,7 @@
 }
 .sign_swiper {
   width: 60%;
-  min-width: 360px;
+  min-width: 350px;
   height: 416px;
   /* background-color: red; */
   margin: 0 !important;
@@ -195,7 +195,7 @@
   margin-top: 30px;
 }
 .sign_input input {
-  width: 90%;
+  width: 85%;
   padding: 12px 20px;
   border: none;
   border-radius: 36px;
@@ -235,7 +235,7 @@ margin: auto;
     gap: 655px;
     width: 100% !important;
     margin: auto !important;
-    padding: 0 20px;
+    padding: 0 40px;
   }
   .earths_news_inner h1 {
     /* margin: auto;  */
@@ -247,9 +247,9 @@ margin: auto;
     width: 100%;
     /* background-color: beige; */
   }
-  .news h2 {
+  /* .news h2 {
     margin-right: 30px;
-  }
+  } */
   /* 서명하기 */
   .sign {
     /* width: 80%; */
@@ -264,14 +264,15 @@ margin: auto;
     text-align: center;
     font-size: 36px;
   }
+
   .earths_news_inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 655px;
-    width: 100% !important;
+    gap: 600px;
+    /* width: 100% !important; */
     margin: auto !important;
-    padding: 0 15px;
+    padding: 0 20px;
   }
   .earths_news h2 {
     font-size: 28px;
@@ -282,35 +283,42 @@ margin: auto;
   }
   /* 소식 */
   .news {
-    width: 100vw;
+    width: 98%;
     /* background-color: beige; */
   }
-  .news h2 {
-    margin-right: 15px;
-  }
+  /* .news h2 {
+    margin-right: 5px;
+  } */
   .news_contents {
     width: 100% !important;
+    max-width: 230px;
   }
-  .news_contents > li > a {
+  .news_contents > li > p {
     font-size: 15px;
     width: 75px;
     line-height: 32px;
   }
-  .news_contents > li:nth-child(2) > a {
+  .news_contents > li:nth-child(2) > p {
     position: absolute;
-    left: 80px;
+    left: 75px;
   }
-  .news_contents > li:nth-child(3) > a {
+  .news_contents > li:nth-child(3) > p {
     position: absolute;
-    left: 160px;
+    left: 150px;
   }
   .news_contents > li > div {
-    left: -26.7%;
+    left: -20.7%;
     /* background-color: antiquewhite; */
   }
   .news_desc ul li {
-    width: 100vw;
+    width: 100%;
     padding: 25px 0;
+  }
+  .news_desc ul li p:first-child {
+    font-size: 16px;
+  }
+  .news_desc ul li p:last-child {
+    font-size: 12px;
   }
   /* 서명하기 */
   .sign {
@@ -324,9 +332,10 @@ margin: auto;
   }
   .sign_input input {
     font-size: 15px;
+    max-width: 350px;
   }
   .sign_input button {
-    right: -4px;
+    right: 0;
     font-size: 15px;
   }
 }
