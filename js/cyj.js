@@ -35,17 +35,12 @@ window.addEventListener("load", () => {
 
   ScrollTrigger.scrollerProxy(document.body, {
     scrollTop(value) {
-      return arguments.length
-        ? lenis.scrollTo(value)
-        : lenis.scroll.instance.scroll;
+
+      return arguments.length ? lenis.scrollTo(value) : lenis.scroll.instance.scroll;
     },
     getBoundingClientRect() {
-      return {
-        top: 0,
-        left: 0,
-        width: window.innerWidth,
-        height: window.innerHeight,
-      };
+      return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+
     },
   });
   // 헤더메뉴 스크롤했을때 나오게하기

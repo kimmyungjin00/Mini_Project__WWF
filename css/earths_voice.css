@@ -116,7 +116,7 @@
 
 /* 반응형 */
 @media all and (max-width: 1280px) {
-  .inner {
+  .earths_voice_inner {
     width: 1200px !important;
   }
   /* 스와이퍼 */
@@ -129,7 +129,7 @@
   }
 }
 /* @media all and (max-width: 1024px) {
-  .inner {
+  .earths_voice_inner {
     width: 980px !important;
   } */
   /* 스와이퍼 */
@@ -142,7 +142,7 @@
   }
 } */
 @media all and (max-width: 768px) {
-  .inner {
+  .earths_voice_inner {
     width: 680px !important;
   }
   /* 스와이퍼 */
@@ -163,7 +163,7 @@
   }
 }
 @media all and (max-width: 390px) {
-  .inner {
+  .earths_voice_inner {
     width: 300px !important;
   }
   /* 스와이퍼 */
