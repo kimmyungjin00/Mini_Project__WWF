@@ -6,7 +6,6 @@
 .pro_subs_h1 {
   padding-top: 100px;
   padding-bottom: 88px;
-  margin: auto 0;
   text-align: center;
   font-family: "Paperozi";
   font-weight: bold;
@@ -52,6 +51,12 @@
 .pro_subs_btn {
   gap: 30px;
   display: flex;
+}
+.tab_thumb {
+  display: none;
+}
+.tab_thumb > img {
+  width: 100%;
 }
 .pro_subs_email {
   display: flex;
@@ -105,11 +110,17 @@
     gap: 0px;
     padding-bottom: 20px;
   }
-
+  .tab_thumb {
+    display: block;
+    width: 100%;
+  }
   .protector_subs_left,
   .protector_subs_right {
     margin: auto !important;
     width: 90%;
+  }
+  .web_thumb {
+    display: none;
   }
 }
 
