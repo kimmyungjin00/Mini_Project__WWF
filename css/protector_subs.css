@@ -1,7 +1,7 @@
 @charset "utf-8";
 .protector_subs {
   background-color: var(--color--neutral);
-  scroll-margin-top: 55px;
+  scroll-margin-top: 30px;
 }
 .pro_subs_h1 {
   padding: 100px 0;
@@ -181,8 +181,12 @@
 }
 
 @media (max-width: 390px) {
+  .protector_subs{
+    scroll-margin-top: 60px;
+  }
   .pro_subs_h1 {
-    font-size: 36px;
+    font-size: 30px;
+    padding: 50px 0;
   }
   .pro_subs_title {
     margin-bottom: 0;
@@ -255,7 +259,6 @@
   .subscribe {
     padding: 15px 0;
     margin-bottom: 0;
-
   }
   .pro_subs_txt p {
     font-size: 12px;
