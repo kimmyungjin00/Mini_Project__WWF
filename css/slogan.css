@@ -2,7 +2,7 @@
 .slogan {
   position: relative;
   overflow: hidden;
-  /* height: 100vh; */
+  height: 100vh;
   scroll-margin-top: 100px;
 }
 /* 이미지 */
@@ -13,18 +13,21 @@
   width: 100%;
   z-index: 0;
 }
-.slogan_bg_imgs .slogan_1280px {
+.slogan_1280px,
+.slogan_768px,
+.slogan_390px {
   display: none;
 }
 /* 텍스트 */
 .slogan_wrap {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
-  padding: var(--spacing--large) 0;
   width: 100%;
 }
 .slogan_EN {
-  padding-top: 220px;
   text-align: center;
 }
 .slogan_EN span {
@@ -46,13 +49,12 @@
   background-color: var(--color--sub);
 }
 .slogan_KR {
-  padding-bottom: 170px;
   margin-top: 30px;
+  text-align: center;
 }
 .slogan_KR p {
-  width: 65%;
-  text-align: center;
-  margin: auto;
+  display: inline-block;
+  padding: 0 10px;
   font-family: "Pretendard";
   font-size: var(--text--heading--h1);
   font-weight: 600;
@@ -61,46 +63,57 @@
 
 /* 반응형 */
 @media (max-width: 1280px) {
-  /* .slogan {
-    height: 720px;
-  } */
-  .slogan_bg_imgs .slogan_1920px {
+  .slogan_1920px,
+  .slogan_768px,
+  .slogan_390px {
     display: none;
   }
-  .slogan_bg_imgs .slogan_1280px {
+  .slogan_1280px {
     display: block;
     width: 100%;
   }
 }
 @media (max-width: 768px) {
   /* 이미지 */
-  .slogan_bg_imgs {
+  .slogan_1920px,
+  .slogan_1280px,
+  .slogan_390px {
     display: none;
   }
+  .slogan_768px {
+    display: block;
+    width: 100%;
+  }
   /* 텍스트 */
-  .slogan_inner {
-    width: 680px !important;
-  }
-  .slogan_EN {
-    padding-top: 80px;
-  }
   .slogan_EN span {
     font-size: 50px;
   }
   .slogan_EN .bottom {
     margin-top: 50px;
   }
-  .slogan_KR {
-    padding-bottom: 80px;
-  }
   .slogan_KR p {
-    width: 60%;
     font-size: 23px;
   }
 }
 @media (max-width: 390px) {
+  /* 이미지 */
+  .slogan_1920px,
+  .slogan_1280px,
+  .slogan_768px {
+    display: none;
+  }
+  .slogan_390px {
+    display: block;
+    width: 100%;
+  }
   /* 텍스트 */
-  .slogan_inner {
-    width: 300px !important;
+  .slogan_EN span {
+    font-size: 30px;
+  }
+  .slogan_EN .bottom {
+    margin-top: 40px;
+  }
+  .slogan_KR p {
+    font-size: 18px;
   }
 }
