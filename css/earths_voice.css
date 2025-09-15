@@ -1,7 +1,7 @@
 @charset "utf-8";
 .earths_voice {
   background-color: #000;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 110px;
 }
 /* 타이틀 */
 .earths_voice_inner h1 {
@@ -110,8 +110,8 @@
   color: #fff;
   z-index: 2;
 }
-.earths_voice_swiper_text span .mo{
-    display: none;
+.earths_voice_swiper_text span .mo {
+  display: none;
 }
 
 /* 반응형 */
@@ -132,8 +132,8 @@
   .earths_voice_inner {
     width: 980px !important;
   } */
-  /* 스와이퍼 */
-  /* .earths_voice_swiper {
+/* 스와이퍼 */
+/* .earths_voice_swiper {
     max-width: 800px;
     height: 450px;
   }
@@ -182,7 +182,10 @@
     flex: none;
     height: 450px; /* 클릭 시 높이 */
   }
-  .earths_voice_swiper_text span .mo{
+  .earths_voice_swiper_text span {
+    font-size: 15px;
+  }
+  .earths_voice_swiper_text span .mo {
     display: block;
-}
+  }
 }

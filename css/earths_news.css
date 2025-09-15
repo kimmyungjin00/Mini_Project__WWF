@@ -5,7 +5,7 @@
   /* padding: 100px 0; */
   /* flex-wrap: wrap; */
   margin-bottom: 100px;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 140px;
 }
 
 .earths_news h1 {
@@ -329,6 +329,19 @@ margin: auto;
   }
   .sign_desc p {
     font-size: 16px;
+  }
+  .sign_swiper .swiper-slide p:first-child {
+    font-size: 13px;
+    /* margin-bottom: 15px; */
+  }
+  .sign_swiper .swiper-slide p:nth-child(2) {
+    font-size: 18px;
+  }
+  .sign_swiper .swiper-slide p:last-child {
+    font-family: "Paperozi";
+    font-size: 13px;
+    font-weight: 400;
+    text-align: end;
   }
   .sign_input input {
     font-size: 15px;

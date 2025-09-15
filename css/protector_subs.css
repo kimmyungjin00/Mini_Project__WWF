@@ -1,11 +1,10 @@
 @charset "utf-8";
 .protector_subs {
   background-color: var(--color--neutral);
-  scroll-margin-top: 100px;
+  scroll-margin-top: 55px;
 }
 .pro_subs_h1 {
-  padding-top: 100px;
-  padding-bottom: 88px;
+  padding: 100px 0;
   text-align: center;
   font-family: "Paperozi";
   font-weight: 600;
@@ -108,7 +107,7 @@
   .pro_subs_wrap {
     flex-direction: column;
     gap: 0px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
   }
   .tab_thumb {
     display: block;
@@ -125,6 +124,12 @@
 }
 
 @media (max-width: 390px) {
+  .pro_subs_h1 {
+    font-size: 36px;
+  }
+  .pro_subs_title p {
+    font-size: 25px;
+  }
   .protector_subs_inner {
     width: 100% !important;
   }
@@ -138,5 +143,29 @@
   .protector_subs_right {
     margin: auto !important;
     width: 90%;
+  }
+  .protector_subs_left {
+    gap: 35px;
+  }
+  .pro_subs_btn {
+    gap: 15px;
+  }
+  .goods_btn {
+    font-size: 18px;
+    height: 40px;
+  }
+  .pro_subs_email p,
+  .email,
+  .subscribe {
+    font-size: 16px;
+  }
+  .email {
+    padding: 15px 0 15px 15px;
+  }
+  .subscribe {
+    padding: 15px 0;
+  }
+  .pro_subs_txt p {
+    font-size: 12px;
   }
 }
