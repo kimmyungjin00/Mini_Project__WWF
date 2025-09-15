@@ -92,6 +92,10 @@
   .earths_protector_inner {
     width: 350px !important;
   }
+  .earths_protector_inner h1 {
+    font-size: 30px;
+    padding: 50px 0;
+  }
   .earths_protector_swiper .swiper-slide > p {
     position: absolute;
     bottom: 30px;

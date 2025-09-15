@@ -166,6 +166,10 @@
   .earths_voice_inner {
     width: 300px !important;
   }
+  .earths_voice_inner h1 {
+    font-size: 30px;
+    padding: 50px 0;
+  }
   /* 스와이퍼 */
   .earths_voice_swiper {
     flex-direction: column; /* 세로 정렬 */
