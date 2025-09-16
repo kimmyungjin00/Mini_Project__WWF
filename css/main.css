@@ -200,6 +200,9 @@
   --spacing--medium: 60px;
   --spacing--small: 25px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   cursor: url(/image/mouseCursor.png), auto;
 }
@@ -237,6 +240,7 @@ a {
   display: block;
   animation: topdown 1s infinite ease-in-out;
 }
+
 .go_top_btn {
   width: 60px;
   cursor: pointer;
