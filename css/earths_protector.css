@@ -20,6 +20,13 @@
 /* 스와이퍼 */
 .earths_protector_swiper {
   width: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+.earths_protector .swiper.swiper-initialized {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-in;
 }
 .earths_protector_swiper .swiper-slide {
   display: flex;
@@ -33,15 +40,44 @@
   overflow: hidden;
   transition: all 0.3s;
   background-color: aliceblue;
+  /* margin-right: 0 !important; */
+}
+.swiper_img {
+  position: relative;
+  width: 80%;
 }
 .earths_protector_swiper .swiper-slide img {
-  width: 80%; /* 이미지 80% */
+  width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
   transition: all 0.3s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
+}
+.swiper_img::after {
+  content: "진행 종료";
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-family: "Pretendard";
+  color: var(--color--font--sub);
+  background-color: #eee;
+}
+.ongoing .swiper_img::after {
+  content: "현재 진행중";
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-family: "Pretendard";
+  color: #fff;
+  background-color: var(--color--main);
 }
 
 /* 가운데 활성화된 슬라이드만 원래 크기 */
@@ -54,7 +90,8 @@
 .earths_protector_swiper .swiper-slide-next {
   z-index: 5;
 }
-.earths_protector_swiper .swiper-slide > p {
+
+/* .earths_protector_swiper .swiper-slide > p {
   position: absolute;
   bottom: 80px;
   left: 130px;
@@ -62,7 +99,7 @@
   padding: 8px 20px;
   border-radius: 40px;
   font-family: "Pretendard";
-}
+} */
 .earths_protector_swiper .swiper-slide > .ongoing {
   color: #fff;
   background-color: var(--color--main);
@@ -91,10 +128,6 @@
 @media (max-width: 390px) {
   .earths_protector_inner {
     width: 350px !important;
-  }
-  .earths_protector_inner h1 {
-    font-size: 30px;
-    padding: 50px 0;
   }
   .earths_protector_swiper .swiper-slide > p {
     position: absolute;
