@@ -165,7 +165,6 @@
   padding: 20px;
   background-color: var(--color--main);
   border-radius: 20px;
-  /* float: left; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
