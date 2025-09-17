@@ -128,19 +128,7 @@
     flex: 6; /* 너무 크게 안 늘어나도록 비율 조정 */
   }
 }
-/* @media all and (max-width: 1024px) {
-  .earths_voice_inner {
-    width: 980px !important;
-  } */
-/* 스와이퍼 */
-/* .earths_voice_swiper {
-    max-width: 800px;
-    height: 450px;
-  }
-  .earths_voice_swiper_box.active {
-    flex: 5;
-  }
-} */
+
 @media all and (max-width: 768px) {
   .earths_voice_inner {
     width: 680px !important;
