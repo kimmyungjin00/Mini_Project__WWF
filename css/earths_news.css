@@ -224,9 +224,6 @@
 
 /* 반응형 */
 @media screen and (max-width: 768px) {
-  /* .earths_news {
-margin: auto;
-} */
   .earths_news_inner {
     display: flex;
     flex-direction: column;
