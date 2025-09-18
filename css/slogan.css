@@ -74,6 +74,9 @@
   }
 }
 @media (max-width: 768px) {
+  /* .slogan {
+    height: 86vh;
+  } */
   /* 이미지 */
   .slogan_1920px,
   .slogan_1280px,
