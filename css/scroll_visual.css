@@ -98,3 +98,9 @@
   height: clamp(100px, 26vw, 300px);
   width: 100%;
 }
+
+@media all and (max-width: 768px) {
+  .testBG {
+    height: 0;
+  }
+}

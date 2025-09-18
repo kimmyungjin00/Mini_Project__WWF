@@ -27,4 +27,15 @@ window.addEventListener("load", function () {
       behavior: "smooth",
     });
   });
+
+  // 서명하기
+  const signInput = this.document.querySelector(".sign_input > input");
+  const signBtn = this.document.querySelector(".sign_input > button");
+  signBtn.addEventListener("click", () => {
+    if (!signInput.value == "") {
+      alert("서명 참여 완료🌏");
+      this.window.location = "campaign.html";
+      signInput.value = "";
+    }
+  });
 });
